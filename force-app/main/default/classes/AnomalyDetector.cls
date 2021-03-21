@@ -3,7 +3,7 @@ public with sharing class AnomalyDetector {
     public Anomaly_Range_Configuration__c anomalyRangeSetting;
 
     public AnomalyDetector() {
-        this.anomalyRandeSetting = Anomaly_Range_Configuration__c.getOrgDefaults();
+        this.anomalyRangeSetting = Anomaly_Range_Configuration__c.getOrgDefaults();
     }
 
     public List<Anomaly__c> detectAnomaly(Weather__c weather){
